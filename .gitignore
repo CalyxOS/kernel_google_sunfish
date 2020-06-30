@@ -128,3 +128,10 @@ kernel/configs/android-*.cfg
 
 # Qualcomm out-of-tree audio drivers
 /techpack/audio
+
+# Other out-of-tree drivers
+/drivers/staging/fts
+/drivers/staging/data-kernel
+/drivers/staging/fw-api
+/drivers/staging/qca-wifi-host-cmn
+/drivers/staging/qcacld-3.0
