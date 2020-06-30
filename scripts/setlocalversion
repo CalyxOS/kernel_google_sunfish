@@ -128,7 +128,7 @@ scm_version()
 		return
 	fi
 	git_all_proj=$(find . -name .git -type d | sort)
-	if [ ! -z "$git_all_proj" ] ; then
+	if [ ! -z "$git_all_proj" ] && test ! -e .scm_skip_subproj; then
 		res=""
 		for git_path in $git_all_proj; do
 			git_path=${git_path%.git}
